@@ -15,7 +15,6 @@ if linkage != nil
 end
 
 target 'CounterExtension' do
-#	pod 'MMKV', '2.0.0'
   pod 'MMKVAppExtension', '2.0.0'
 end
 

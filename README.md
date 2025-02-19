@@ -1,5 +1,9 @@
 This project is to show how to communitate between App and Widget using MMKV.
 
+The screenshot like below:
+
+![App-Widget-Using-MMKV](screenshot/App-widget-mmkv.gif)
+
 # Getting Started
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.

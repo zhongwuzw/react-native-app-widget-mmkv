@@ -20,6 +20,7 @@ class AppDelegate: RCTAppDelegate {
     }
 
     @objc func appDidEnterBackground() {
+        // We should reload the Widget to refresh the counter
         WidgetCenter.shared.reloadTimelines(ofKind: "Counter")
     }
 

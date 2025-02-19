@@ -36,6 +36,7 @@ function App(): React.JSX.Element {
   useEffect(() => {
     const subscription = AppState.addEventListener("change", (nextAppState) => {
       if (nextAppState === "active") {
+        // Refresh is Widget changed the counter
         setCount(mmkv.getNumber("counter") || 0);
       }
     });

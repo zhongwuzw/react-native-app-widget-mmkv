@@ -111,26 +111,10 @@
 			path = Counter;
 			sourceTree = "<group>";
 		};
-		0E9194D32D645AA70008A589 /* Third */ = {
-			isa = PBXGroup;
-			children = (
-				0E9194D42D645ACF0008A589 /* MMKV_iOS */,
-			);
-			path = Third;
-			sourceTree = "<group>";
-		};
-		0E9194D42D645ACF0008A589 /* MMKV_iOS */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MMKV_iOS;
-			sourceTree = "<group>";
-		};
 		13B07FAE1A68108700A75B9A /* ReactNativeCounter */ = {
 			isa = PBXGroup;
 			children = (
 				0E9194E42D6486E30008A589 /* ReactNativeCounter.entitlements */,
-				0E9194D32D645AA70008A589 /* Third */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,

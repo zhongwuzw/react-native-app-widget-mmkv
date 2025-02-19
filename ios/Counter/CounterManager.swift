@@ -8,6 +8,7 @@
 class CounterManager {
     static let shared = CounterManager()
     private lazy var mmkv: MMKV? = {
+        // Using shared group to share mmkv between App and Widget
         let appGroup = Bundle.main.object(forInfoDictionaryKey: "AppGroup") as? String ?? ""
         let groupDir = FileManager.default.containerURL(
             forSecurityApplicationGroupIdentifier: appGroup
