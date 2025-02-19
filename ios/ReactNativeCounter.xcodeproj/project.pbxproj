@@ -9,25 +9,83 @@
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-ReactNativeCounter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-ReactNativeCounter.a */; };
 		0E2AE01FF561E57DF4A236D7 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		0E9194A32D6421800008A589 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9194A22D6421800008A589 /* WidgetKit.framework */; };
+		0E9194A52D6421800008A589 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9194A42D6421800008A589 /* SwiftUI.framework */; };
+		0E9194B62D6421810008A589 /* CounterExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0E9194A12D6421800008A589 /* CounterExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0E9194C32D6436EE0008A589 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9194BC2D6436EE0008A589 /* AppIntent.swift */; };
+		0E9194C42D6436EE0008A589 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9194BE2D6436EE0008A589 /* Counter.swift */; };
+		0E9194C52D6436EE0008A589 /* CounterBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9194BF2D6436EE0008A589 /* CounterBundle.swift */; };
+		0E9194C72D6436EE0008A589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E9194BD2D6436EE0008A589 /* Assets.xcassets */; };
+		0E9194E12D647ACE0008A589 /* CounterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9194DF2D647AC60008A589 /* CounterManager.swift */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		6D90D594110E01466F8182FD /* libPods-CounterExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D68AA4AC0F5638C12DC025CF /* libPods-CounterExtension.a */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0E9194B42D6421810008A589 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E9194A02D6421800008A589;
+			remoteInfo = CounterExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E9194B72D6421810008A589 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0E9194B62D6421810008A589 /* CounterExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0E9194A12D6421800008A589 /* CounterExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CounterExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E9194A22D6421800008A589 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0E9194A42D6421800008A589 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0E9194BC2D6436EE0008A589 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		0E9194BD2D6436EE0008A589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E9194BE2D6436EE0008A589 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		0E9194BF2D6436EE0008A589 /* CounterBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterBundle.swift; sourceTree = "<group>"; };
+		0E9194C12D6436EE0008A589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E9194DF2D647AC60008A589 /* CounterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterManager.swift; sourceTree = "<group>"; };
+		0E9194E32D6486230008A589 /* CounterExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CounterExtension.entitlements; sourceTree = "<group>"; };
+		0E9194E42D6486E30008A589 /* ReactNativeCounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ReactNativeCounter.entitlements; path = ReactNativeCounter/ReactNativeCounter.entitlements; sourceTree = "<group>"; };
+		0E9194E52D6488580008A589 /* ReactNativeCounterWidget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeCounterWidget-Bridging-Header.h"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ReactNativeCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNativeCounter/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeCounter/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ReactNativeCounter/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1FC0EBB1FD4C19B66ECC6D11 /* Pods-CounterExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CounterExtension.debug.xcconfig"; path = "Target Support Files/Pods-CounterExtension/Pods-CounterExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		2631E04274F90A83EDACC91E /* Pods-CounterExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CounterExtension.release.xcconfig"; path = "Target Support Files/Pods-CounterExtension/Pods-CounterExtension.release.xcconfig"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-ReactNativeCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeCounter.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeCounter/Pods-ReactNativeCounter.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-ReactNativeCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeCounter.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeCounter/Pods-ReactNativeCounter.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-ReactNativeCounter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeCounter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ReactNativeCounter/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNativeCounter/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D68AA4AC0F5638C12DC025CF /* libPods-CounterExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CounterExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0E91949E2D6421800008A589 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9194A52D6421800008A589 /* SwiftUI.framework in Frameworks */,
+				0E9194A32D6421800008A589 /* WidgetKit.framework in Frameworks */,
+				6D90D594110E01466F8182FD /* libPods-CounterExtension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,9 +97,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E9194C22D6436EE0008A589 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				0E9194DF2D647AC60008A589 /* CounterManager.swift */,
+				0E9194BC2D6436EE0008A589 /* AppIntent.swift */,
+				0E9194BD2D6436EE0008A589 /* Assets.xcassets */,
+				0E9194BE2D6436EE0008A589 /* Counter.swift */,
+				0E9194BF2D6436EE0008A589 /* CounterBundle.swift */,
+				0E9194C12D6436EE0008A589 /* Info.plist */,
+				0E9194E52D6488580008A589 /* ReactNativeCounterWidget-Bridging-Header.h */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		0E9194D32D645AA70008A589 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				0E9194D42D645ACF0008A589 /* MMKV_iOS */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		0E9194D42D645ACF0008A589 /* MMKV_iOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MMKV_iOS;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* ReactNativeCounter */ = {
 			isa = PBXGroup;
 			children = (
+				0E9194E42D6486E30008A589 /* ReactNativeCounter.entitlements */,
+				0E9194D32D645AA70008A589 /* Third */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -56,6 +145,9 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-ReactNativeCounter.a */,
+				0E9194A22D6421800008A589 /* WidgetKit.framework */,
+				0E9194A42D6421800008A589 /* SwiftUI.framework */,
+				D68AA4AC0F5638C12DC025CF /* libPods-CounterExtension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -70,8 +162,10 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				0E9194E32D6486230008A589 /* CounterExtension.entitlements */,
 				13B07FAE1A68108700A75B9A /* ReactNativeCounter */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				0E9194C22D6436EE0008A589 /* Counter */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -85,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* ReactNativeCounter.app */,
+				0E9194A12D6421800008A589 /* CounterExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +189,8 @@
 			children = (
 				3B4392A12AC88292D35C810B /* Pods-ReactNativeCounter.debug.xcconfig */,
 				5709B34CF0A7D63546082F79 /* Pods-ReactNativeCounter.release.xcconfig */,
+				1FC0EBB1FD4C19B66ECC6D11 /* Pods-CounterExtension.debug.xcconfig */,
+				2631E04274F90A83EDACC91E /* Pods-CounterExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -101,6 +198,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0E9194A02D6421800008A589 /* CounterExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E9194BB2D6421810008A589 /* Build configuration list for PBXNativeTarget "CounterExtension" */;
+			buildPhases = (
+				5DCE468DB0472C68497778E7 /* [CP] Check Pods Manifest.lock */,
+				0E91949D2D6421800008A589 /* Sources */,
+				0E91949E2D6421800008A589 /* Frameworks */,
+				0E91949F2D6421800008A589 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CounterExtension;
+			productName = CounterExtension;
+			productReference = 0E9194A12D6421800008A589 /* CounterExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		13B07F861A680F5B00A75B9A /* ReactNativeCounter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeCounter" */;
@@ -112,10 +227,12 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				0E9194B72D6421810008A589 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0E9194B52D6421810008A589 /* PBXTargetDependency */,
 			);
 			name = ReactNativeCounter;
 			productName = ReactNativeCounter;
@@ -128,10 +245,14 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
+					0E9194A02D6421800008A589 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -149,11 +270,20 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* ReactNativeCounter */,
+				0E9194A02D6421800008A589 /* CounterExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0E91949F2D6421800008A589 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9194C72D6436EE0008A589 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,6 +330,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeCounter/Pods-ReactNativeCounter-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5DCE468DB0472C68497778E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CounterExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +394,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0E91949D2D6421800008A589 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9194C32D6436EE0008A589 /* AppIntent.swift in Sources */,
+				0E9194C42D6436EE0008A589 /* Counter.swift in Sources */,
+				0E9194E12D647ACE0008A589 /* CounterManager.swift in Sources */,
+				0E9194C52D6436EE0008A589 /* CounterBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B07F871A680F5B00A75B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,14 +415,117 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0E9194B52D6421810008A589 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E9194A02D6421800008A589 /* CounterExtension */;
+			targetProxy = 0E9194B42D6421810008A589 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0E9194B82D6421810008A589 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FC0EBB1FD4C19B66ECC6D11 /* Pods-CounterExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = CounterExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4S68FLC2TS;
+				ENABLE_DEBUG_DYLIB = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Counter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Counter;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ReactNativeCounter.Counter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Counter/ReactNativeCounterWidget-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E9194B92D6421810008A589 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2631E04274F90A83EDACC91E /* Pods-CounterExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = CounterExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4S68FLC2TS;
+				ENABLE_DEBUG_DYLIB = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Counter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Counter;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ReactNativeCounter.Counter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Counter/ReactNativeCounterWidget-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-ReactNativeCounter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ReactNativeCounter/ReactNativeCounter.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4S68FLC2TS;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ReactNativeCounter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -275,6 +541,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeCounter;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -287,7 +554,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ReactNativeCounter/ReactNativeCounter.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4S68FLC2TS;
 				INFOPLIST_FILE = ReactNativeCounter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,6 +571,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeCounter;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -376,10 +646,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -448,10 +715,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -462,6 +726,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0E9194BB2D6421810008A589 /* Build configuration list for PBXNativeTarget "CounterExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E9194B82D6421810008A589 /* Debug */,
+				0E9194B92D6421810008A589 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeCounter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -14,9 +14,13 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
+target 'CounterExtension' do
+#	pod 'MMKV', '2.0.0'
+  pod 'MMKVAppExtension', '2.0.0'
+end
+
 target 'ReactNativeCounter' do
   config = use_native_modules!
-
   use_react_native!(
     :path => config[:reactNativePath],
     # An absolute path to your application root.

@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-mmkv/ios/MmkvPlatformContextModule.mm b/node_modules/react-native-mmkv/ios/MmkvPlatformContextModule.mm
+index 71e80fe..2955edc 100644
+--- a/node_modules/react-native-mmkv/ios/MmkvPlatformContextModule.mm
++++ b/node_modules/react-native-mmkv/ios/MmkvPlatformContextModule.mm
+@@ -49,7 +49,7 @@ - (NSString*)getAppGroupDirectory {
+                                           @"accessible via NSFileManager!"
+                                  userInfo:@{@"appGroup" : appGroup}];
+   }
+-  return groupDir.path;
++	return [groupDir.path stringByAppendingPathComponent:@"mmkv"];
+ }
+ 
+ @end
